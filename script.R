@@ -395,7 +395,7 @@ dim(GSE11103.sinatures.s[,1:2])
 
 row.names(IC2.s)==row.names(GSE11103.sinatures.s[,1:2])
 
-
+#
 intersect <- function(x, y) y[match(x, y, nomatch = 0)]
 
 myrows=intersect(row.names(IC2.s),row.names(GSE11103.sinatures.c))

@@ -1123,7 +1123,7 @@ resQual <- qualVarAnalysis(params=params, icaSet=icaSetMainz, keepVar=c("er","gr
 ## We are interested in correlations exceeding 0.3 in absolute value, and plots will only be drawn
 ## for correlations exceeding this threshold.
 resQuant <- quantVarAnalysis(params=params, icaSet=icaSetMainz, keepVar="age", typeCor="pearson", cutoffOn="cor", cutoff=0.3, adjustBy="none", path="quantVarAnalysis/", filename="quantVar", typeImage = "svg")
-
+#
 resmix <- plotAllMix(A=A(icaSetMainz), nbMix=2, nbBreaks=50)
 
 ## plot the positions of the samples on the second component according to their ER status
