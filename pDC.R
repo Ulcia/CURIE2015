@@ -303,3 +303,5 @@ write.table(pDC_6.S.s[,5][pDC_6.S.s[,5] < -2], file="pDC_IC5_6m.rnk", quote=FALS
 write.table(pDC_6.S.s[,5][pDC_6.S.s[,5] > 2], file="pDC_IC5_6p.rnk", quote=FALSE, sep="\t", col.names=FALSE, row.names=TRUE)              
 write.table(pDC_6.S.s[,6][pDC_6.S.s[,6] < -2], file="pDC_IC6_6m.rnk", quote=FALSE, sep="\t", col.names=FALSE, row.names=TRUE)              
 write.table(pDC_6.S.s[,6][pDC_6.S.s[,6] > 2], file="pDC_IC6_6p.rnk", quote=FALSE, sep="\t", col.names=FALSE, row.names=TRUE)              
+
+#
