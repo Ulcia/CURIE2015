@@ -305,3 +305,19 @@ write.table(pDC_6.S.s[,6][pDC_6.S.s[,6] < -2], file="pDC_IC6_6m.rnk", quote=FALS
 write.table(pDC_6.S.s[,6][pDC_6.S.s[,6] > 2], file="pDC_IC6_6p.rnk", quote=FALSE, sep="\t", col.names=FALSE, row.names=TRUE)              
 
 #
+
+
+library(ACSNMineR)
+metamap=format_from_gmt_2("./Metamap_Maria_17.02.15.gmt")
+E.IC1_6m<-enrichment(names(pDC_6.S.s[,1][pDC_6.S.s[,1] < -2]), min_module_size = 10, threshold = 1, maps = list(Metamap=metamap))
+E.IC1_6p<-enrichment(names(pDC_6.S.s[,1][pDC_6.S.s[,1] >  2]), min_module_size = 10, threshold = 1, maps = list(Metamap=metamap))
+E.IC2_6m<-enrichment(names(pDC_6.S.s[,2][pDC_6.S.s[,2] < -2]), min_module_size = 10, threshold = 1, maps = list(Metamap=metamap))
+E.IC2_6p<-enrichment(names(pDC_6.S.s[,2][pDC_6.S.s[,2] >  2]), min_module_size = 10, threshold = 1, maps = list(Metamap=metamap))
+E.IC3_6m<-enrichment(names(pDC_6.S.s[,3][pDC_6.S.s[,3] < -2]), min_module_size = 10, threshold = 1, maps = list(Metamap=metamap))
+E.IC3_6p<-enrichment(names(pDC_6.S.s[,3][pDC_6.S.s[,3] >  2]), min_module_size = 10, threshold = 1, maps = list(Metamap=metamap))
+E.IC4_6m<-enrichment(names(pDC_6.S.s[,4][pDC_6.S.s[,4] < -2]), min_module_size = 10, threshold = 1, maps = list(Metamap=metamap))
+E.IC4_6p<-enrichment(names(pDC_6.S.s[,4][pDC_6.S.s[,4] >  2]), min_module_size = 10, threshold = 1, maps = list(Metamap=metamap))
+E.IC5_6m<-enrichment(names(pDC_6.S.s[,5][pDC_6.S.s[,5] < -2]), min_module_size = 10, threshold = 1, maps = list(Metamap=metamap))
+E.IC5_6p<-enrichment(names(pDC_6.S.s[,5][pDC_6.S.s[,5] >  2]), min_module_size = 10, threshold = 1, maps = list(Metamap=metamap))
+E.IC6_6m<-enrichment(names(pDC_6.S.s[,6][pDC_6.S.s[,6] < -2]), min_module_size = 10, threshold = 1, maps = list(Metamap=metamap))
+E.IC6_6p<-enrichment(names(pDC_6.S.s[,6][pDC_6.S.s[,6] >  2]), min_module_size = 10, threshold = 1, maps = list(Metamap=metamap))
